@@ -1,4 +1,4 @@
-#include "ReaderWindow.h"
+#include "Emulator.h"
 
 #include <QApplication>
 

@@ -1,4 +1,4 @@
-#include "ReaderWindow.h"
+#include "Emulator.h"
 #include "ui_ReaderWindow.h"
 #include <QtEndian>
 #include <utility>

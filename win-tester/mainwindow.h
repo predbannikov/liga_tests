@@ -3,12 +3,13 @@
 
 #include <QMainWindow>
 #include <QSerialPort>
+#include <serialport.h>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
 
-class ReaderWindow : public QMainWindow
+class Emulator : public QMainWindow
 {
     Q_OBJECT
 
@@ -16,8 +17,8 @@ class ReaderWindow : public QMainWindow
 
 
 public:
-    ReaderWindow(QWidget *parent = nullptr);
-    ~ReaderWindow();
+    Emulator(QWidget *parent = nullptr);
+    ~Emulator();
 
 public slots:
     void onSerialReadyRead();
@@ -37,7 +38,8 @@ private slots:
 private:
 
     void port_init();
-    QSerialPort *port;
+
+    SerialPort *port = nullptr;
 
     Ui::MainWindow *ui;
 

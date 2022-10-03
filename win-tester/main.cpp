@@ -5,7 +5,7 @@
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    ReaderWindow w;
+    Emulator w;
     w.show();
     return a.exec();
 }

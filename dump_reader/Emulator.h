@@ -1,5 +1,5 @@
-#ifndef READERWINDOW_H
-#define READERWINDOW_H
+#ifndef EMULATOR_H
+#define EMULATOR_H
 
 #include <QMainWindow>
 #include <QFile>
@@ -123,4 +123,4 @@ private:
 
     QString file_name;
 };
-#endif // READERWINDOW_H
+#endif // EMULATOR_H
